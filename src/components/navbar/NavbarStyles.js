@@ -21,7 +21,7 @@ export const NavbarStyles = styled.div`
   }
 
   .navbar {
-    width: 100%;
+    width: 100vw;
     max-width: 100vw;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
     background-color: rgba(41, 50, 56);
@@ -36,7 +36,8 @@ export const NavbarStyles = styled.div`
 
   .navbar .menu-items {
     display: flex;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: #293238;
   }
 
   .navbar .nav-container li {
@@ -158,7 +159,16 @@ export const NavbarStyles = styled.div`
     display: none;
   }
 
-  @media (min-width: 500px) and (max-width: 12000px) {
+  @media (max-width: 500px) {
+    .navbar {
+      width: 100vw;
+      max-width: 100vw;
+      box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+      background-color: rgba(41, 50, 56);
+    }
+  }
+
+  @media (min-width: 501px) and (max-width: 12000px) {
     .navbar .menu-items {
       gap: 43px;
     }

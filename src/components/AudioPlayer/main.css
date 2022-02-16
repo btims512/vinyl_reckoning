@@ -5,7 +5,7 @@
 }
 
 html {
-  min-width: 800px;
+  /* min-width: 800px; */
 }
 
 body {
@@ -16,6 +16,10 @@ body {
   height: 100vh;
   background-color: #e3e3e3;
 
+}
+
+.album_meta h1 {
+  font-size: initial;
 }
 
 button {
@@ -117,7 +121,7 @@ header h3 {
 }
 
 .actions {
-  background: #3a3a3a;
+  background: #293238;
   color: white;
   display: flex;
   flex-direction: row;

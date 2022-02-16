@@ -3,7 +3,11 @@ import { HomeBodyStyles } from "./HomeBodyStyles";
 import AudioPlayer from "../AudioPlayer/AudioPlayer";
 
 function HomeBody() {
-  return <AudioPlayer />;
+  return (
+    <div>
+      <AudioPlayer />
+    </div>
+  );
 }
 
 export default HomeBody;
