@@ -22,8 +22,9 @@ export const NavbarStyles = styled.div`
 
   .navbar {
     width: 100%;
-    max-width: 1200px;
+    max-width: 100vw;
     box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    background-color: rgba(41, 50, 56);
   }
 
   .nav-container {
@@ -35,6 +36,7 @@ export const NavbarStyles = styled.div`
 
   .navbar .menu-items {
     display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   .navbar .nav-container li {
@@ -43,9 +45,9 @@ export const NavbarStyles = styled.div`
 
   .navbar .nav-container a {
     text-decoration: none;
-    color: white;
+    color: rgb(234, 51, 161);
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: 2rem;
     padding: 0.7rem;
   }
 
@@ -57,6 +59,7 @@ export const NavbarStyles = styled.div`
     display: block;
     /* position: relative; */
     height: 60px;
+    margin-left: 1.3rem;
   }
 
   .nav-container .checkbox {
@@ -89,7 +92,7 @@ export const NavbarStyles = styled.div`
     height: 4px;
     width: 100%;
     border-radius: 10px;
-    background: #0e2431;
+    background: rgb(234, 51, 161);
   }
 
   .nav-container .hamburger-lines .line1 {
@@ -108,21 +111,22 @@ export const NavbarStyles = styled.div`
 
   .navbar .menu-items {
     padding-top: 120px;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0);
     height: 100vh;
     width: 100vw;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
-    margin-left: -40px;
-    padding-left: 50px;
+    margin-left: -20px;
+    padding-top: 90px;
+    /* padding-left: 50px; */
     transition: transform 0.5s ease-in-out;
     text-align: center;
   }
 
   .navbar .menu-items li {
     margin-bottom: 1.2rem;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 500;
   }
 
@@ -131,7 +135,7 @@ export const NavbarStyles = styled.div`
     top: 5px;
     right: 15px;
     font-size: 1.2rem;
-    color: #0e2431;
+    color: #fafafa;
   }
 
   .nav-container input[type="checkbox"]:checked ~ .menu-items {
@@ -152,5 +156,11 @@ export const NavbarStyles = styled.div`
 
   .nav-container input[type="checkbox"]:checked ~ .logo {
     display: none;
+  }
+
+  @media (min-width: 500px) and (max-width: 12000px) {
+    .navbar .menu-items {
+      gap: 43px;
+    }
   }
 `;
