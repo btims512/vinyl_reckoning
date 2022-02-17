@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import playerContext from "../../context/PlayerContext";
 
-let Header = () => (
-  <header>
-    <h3> ReactWave - {}</h3>
-  </header>
-);
+let Header = () => {
+  const { currentSong, songslist } = useContext(playerContext);
+  return (
+    <header>
+      <h3> Episodes</h3>
+    </header>
+  );
+};
 
 export default Header;

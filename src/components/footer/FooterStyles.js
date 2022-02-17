@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterStyles = styled.div`
   .footer {
-    position: fixed;
+    /* position: -webkit-sticky; */
     bottom: 0;
     left: 0;
     width: 100%;
