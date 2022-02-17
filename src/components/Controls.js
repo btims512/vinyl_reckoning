@@ -62,6 +62,7 @@ function Controls() {
 
   return (
     <div className="controls">
+      <div className="control-align"></div>
       <audio
         onTimeUpdate={(e) => setCurrentTime(e.target.currentTime)}
         onCanPlay={(e) => setDur(e.target.duration)}
@@ -119,6 +120,31 @@ function Controls() {
           {songslist[currentSong].artistName}
         </span>
       </div>
+      <div className="mobile-prog">
+        <input
+          onChange={handleProgress}
+          value={dur ? (currentTime * 100) / dur : 0}
+          type="range"
+          name="progresBar"
+          id="prgbar"
+        />
+        <span className="currentT">{fmtMSS(currentTime)}</span>/
+        <span className="totalT">{fmtMSS(dur)}</span>
+        <div className="plsoptions">
+          <span
+            onClick={toggleRandom}
+            className={"random " + (random ? "active" : "")}
+          >
+            <FontAwesomeIcon icon={faShuffle}></FontAwesomeIcon>
+          </span>
+          <span
+            onClick={toggleRepeat}
+            className={"repeat " + (repeat ? "active" : "")}
+          >
+            <FontAwesomeIcon icon={faRotateRight}></FontAwesomeIcon>
+          </span>
+        </div>
+      </div>
       <input
         onChange={handleProgress}
         value={dur ? (currentTime * 100) / dur : 0}
@@ -145,5 +171,7 @@ function Controls() {
     </div>
   );
 }
+
+
 
 export default Controls;

@@ -4,9 +4,10 @@ import Actions from "../Playlist/Actions";
 import Playlist from "../Playlist/Playlist";
 import PlayerState from "../../context/PlayerState";
 import Controls from "../Controls";
+import Embed from "./Embed";
 
 import "./main.css";
-import "./input.css";
+// import "./input.css";
 
 let AudioPlayer = () => {
   return (
@@ -14,9 +15,10 @@ let AudioPlayer = () => {
       <div className="audioplayer">
         <div className="inside_content">
           <Header />
+          <Embed />
           {/* <Actions /> */}
-        <Controls />
-          <Playlist />
+          {/* <Controls /> */}
+          {/* <Playlist /> */}
         </div>
       </div>
     </PlayerState>

@@ -1,12 +1,22 @@
 import React, { useContext } from "react";
 import playerContext from "../../context/PlayerContext";
+import bb_main from "/Users/Ben/Desktop/project_files/vinyl_reckoning/src/assets/group_pic_1.png";
+import Carousel from "./Carousel";
 
 let Header = () => {
   const { currentSong, songslist } = useContext(playerContext);
   return (
-    <header>
-      <h3> Episodes</h3>
-    </header>
+    <div>
+      <div className="car-body">
+        <div className="carousel "> carousel here {/* <Carousel /> */}</div>
+      </div>
+      <header>
+        <h3> Episodes</h3>
+        <div>
+          {/* <img src={bb_main} alt="" style={{ width: "100vw" }} /> */}
+        </div>
+      </header>
+    </div>
   );
 };
 

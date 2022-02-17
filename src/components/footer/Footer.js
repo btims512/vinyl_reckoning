@@ -23,9 +23,13 @@ function Footer() {
         <div className="icons">
           <a href="https://www.youtube.com/channel/UCt7RykV_2ImMZ9m06KiHmLQ">
             <i className="fab fa-facebook" />
+            <FontAwesomeIcon icon={faYoutube} className="hover:text-blue" />
+          </a>
+          <a href="https://www.facebook.com/pages/category/Podcast/Vinyl-Reckoning-113882210005620/">
+            <i className="fab fa-facebook" />
             <FontAwesomeIcon icon={faFacebook} className="hover:text-blue" />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/vinyl_reckoning/">
             <i className="fab fa-instagram" />
             <FontAwesomeIcon icon={faInstagram} />
           </a>
@@ -33,10 +37,10 @@ function Footer() {
             <i className="fab fa-apple" />
             <FontAwesomeIcon icon={faApple} />
           </a>
-          <a href="https://podcasts.apple.com/us/podcast/the-vinyl-reckoning-podcast/id1452882599">
+          {/* <a href="https://podcasts.apple.com/us/podcast/the-vinyl-reckoning-podcast/id1452882599">
             <i className="fab fa-spotify" />
             <FontAwesomeIcon icon={faSpotify} />
-          </a>
+          </a> */}
           <p className="company-name">
             VINYL RECKONING © 2022, ALL Rights Reserved
           </p>

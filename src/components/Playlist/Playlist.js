@@ -9,7 +9,7 @@ function Playlist() {
   return (
     <div className="playlist no_drag">
       <div className="header">
-        <h4 className="pltext">Episodes</h4>
+        <h4 className="pltext"></h4>
       </div>
       <ul className="loi">
         {songslist.map((song, i) => (
