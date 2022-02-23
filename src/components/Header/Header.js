@@ -4,12 +4,13 @@ import bb_main from "/Users/Ben/Desktop/project_files/vinyl_reckoning/src/assets
 import Carousel from "./Carousel";
 
 let Header = () => {
-  const { currentSong, songslist } = useContext(playerContext);
+  // const { currentSong, songslist } = useContext(playerContext);
   return (
     <div>
-      <div className="car-body">
-        <div className="carousel "> carousel here {/* <Carousel /> */}</div>
-      </div>
+      {/* <div className="car-body"> */}
+        {/* <div className="carousel "> </div> */}
+      {/* </div> */}
+      carousel here <Carousel />
       <header>
         <h3> Episodes</h3>
         <div>

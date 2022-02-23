@@ -182,7 +182,7 @@ export const NavbarStyles = styled.div`
     display: none;
   }
 
-  @media (max-width: 791px) {
+  @media (max-width: 866px) {
     .navbar {
       width: 100vw;
       max-width: 100vw;
@@ -195,7 +195,7 @@ export const NavbarStyles = styled.div`
     }
   }
 
-  @media (min-width: 790px) and (max-width: 12000px) {
+  @media (min-width: 866px) and (max-width: 12000px) {
     .navbar {
       display: none;
     }

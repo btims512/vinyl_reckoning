@@ -4,7 +4,7 @@ import Actions from "../Playlist/Actions";
 import Playlist from "../Playlist/Playlist";
 import PlayerState from "../../context/PlayerState";
 import Controls from "../Controls";
-import Embed from "./Embed";
+import Embed from "./EmbedPods";
 
 import "./main.css";
 // import "./input.css";

@@ -33,37 +33,37 @@ function Navbar() {
       </div>
       {/* Desktop */}
       <div class="navbar-desk">
-      <div className="nav-align">
-
-        <div class="container nav-container">
-          <input class="checkbox" type="checkbox" name="" id="" />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-          <div class="logo">
-            <h1>vinyl reckoning</h1>
-          <div class="menu-items">
-          <div className="align">
-
-            <li>
-              <a href="/">home</a>
-            </li>
-            <li>
-              <a href="https://vinylreckoning.podbean.com">episodes</a>
-            </li>
-            <li>
-              <a href="https://vinyl-reckoning.creator-spring.com/?">merch</a>
-            </li>
-            <li>
-              <a href="#">contact</a>
-            </li>
-          </div>
-          </div>
+        <div className="nav-align">
+          <div class="container nav-container">
+            <input class="checkbox" type="checkbox" name="" id="" />
+            <div class="hamburger-lines">
+              <span class="line line1"></span>
+              <span class="line line2"></span>
+              <span class="line line3"></span>
+            </div>
+            <div class="logo">
+              <h1>vinyl reckoning</h1>
+              <div class="menu-items">
+                <div className="align">
+                  <li>
+                    <a href="/">home</a>
+                  </li>
+                  <li>
+                    <a href="https://vinylreckoning.podbean.com">episodes</a>
+                  </li>
+                  <li>
+                    <a href="https://vinyl-reckoning.creator-spring.com/?">
+                      merch
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">contact</a>
+                  </li>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </NavbarStyles>
   );

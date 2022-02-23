@@ -1,110 +1,32 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import createClass from "create-react-class";
 import { CarouselStyles } from "./CarouselStyles";
+import bb_main from "/Users/Ben/Desktop/project_files/vinyl_reckoning/src/assets/group_pic_1.png";
 
-const ImageCarousel = ({ imageUrls, defaultSlideIndex = 0 }) => {
-  const [currentSlideIndex, setCurrentSlideIndex] = React.useState(
-    defaultSlideIndex
-  );
-  const slidesRef = React.useRef([]);
-  const imageTrackRef = React.useRef(null);
-  let slideWidth = 0;
-  React.useEffect(() => {
-    slideWidth = slidesRef.current[0].getBoundingClientRect().width;
-    slidesRef.current.forEach((slide, index) => {
-      slide.style.left = slideWidth * index + "px";
-    });
-  }, [slidesRef.current]);
+import SimpleImageSlider from "react-simple-image-slider";
 
-  React.useEffect(() => {
-    const amountToMove = slidesRef.current[currentSlideIndex].style.left;
-    imageTrackRef.current.style.transform = `translateX(-${amountToMove})`;
-  }, [currentSlideIndex]);
+const images = [
+  { url: "https://i.imgur.com/qvFhidE.png" },
+  { url: "https://i.imgur.com/WFg9Q9C.jpg" },
+  { url: "images/3.jpg" },
+  { url: "images/4.jpg" },
+  { url: "images/5.jpg" },
+  { url: "images/6.jpg" },
+  { url: "images/7.jpg" },
+];
 
-  const clickLeftArrow = () => {
-    setCurrentSlideIndex(Math.max(currentSlideIndex - 1, 0));
-  };
-  const clickRightArrow = () => {
-    setCurrentSlideIndex(Math.min(currentSlideIndex + 1, imageUrls.length - 1));
-  };
-  const clickIndicator = (index) => {
-    setCurrentSlideIndex(index);
-  };
+const Carousel = () => {
   return (
-    <div className="imageCarouselContainer">
-      <div
-        className={
-          "arrowButton leftArrow" +
-          (currentSlideIndex === 0 ? " is-hidden" : "")
-        }
-        onClick={clickLeftArrow}
-      >
-        {"<"}
-      </div>
-      <div className="imageTrackContainer">
-        <ul className="imageTrack" ref={imageTrackRef}>
-          {imageUrls.map((url, index) => {
-            return (
-              <li
-                key={index.toString()}
-                className={
-                  "imageSlide" +
-                  (index === currentSlideIndex ? " currentSlide" : "")
-                }
-                ref={(el) => (slidesRef.current[index] = el)}
-              >
-                <img className="carouselImage" src={url} alt="" />
-              </li>
-            );
-          })}
-        </ul>
-      </div>
-      <div
-        className={
-          "arrowButton rightArrow" +
-          (currentSlideIndex === imageUrls.length - 1 ? " is-hidden" : "")
-        }
-        onClick={clickRightArrow}
-      >
-        {">"}
-      </div>
-      <div class="indicatorNav">
-        {imageUrls.map((url, index) => {
-          return (
-            <button
-              class={
-                "carouseIndicator" +
-                (index === currentSlideIndex ? " currentSlide" : "")
-              }
-              onClick={() => clickIndicator(index)}
-            />
-          );
-        })}
-      </div>
+    <div>
+      <SimpleImageSlider
+        width="100%"
+        height="100vh"
+        images={images}
+        showBullets={true}
+        showNavs={true}
+      />
     </div>
   );
 };
 
-function Carousel() {
-  return (
-    <div>
-      <CarouselStyles>
-        <div id="app"></div>
-      </CarouselStyles>
-      ReactDOM.render(
-        <ImageCarousel imageUrls={imageUrls} />,
-        document.getElementById("app")
-      );
-    </div>
-  );
-}
-
 export default Carousel;
-
-const imageUrls = [
-  "https://images.unsplash.com/photo-1453728013993-6d66e9c9123a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlld3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80",
-  "https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg",
-  "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGhvdG9ncmFwaHl8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80",
-  "https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg",
-];
-
