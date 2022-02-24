@@ -17,15 +17,9 @@ const images = [
 
 const Carousel = () => {
   return (
-    <div>
-      <SimpleImageSlider
-        width="100%"
-        height="100vh"
-        images={images}
-        showBullets={true}
-        showNavs={true}
-      />
-    </div>
+<div class="slider">
+<img src="images/image1.jpg" /><img src="images/image2.jpg" /><div class="just_text">This one's just text.</div><img src="images/image3.jpg" /><div><img src="images/image4.jpg" /><span class="caption">This one has a caption</span></div>
+</div>
   );
 };
 
