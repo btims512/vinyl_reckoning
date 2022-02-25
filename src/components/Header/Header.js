@@ -10,7 +10,7 @@ let Header = () => {
       {/* <div className="car-body"> */}
         {/* <div className="carousel "> </div> */}
       {/* </div> */}
-      carousel here <Carousel />
+      {/* carousel here <Carousel /> */}
       <header>
         <h3> Episodes</h3>
         <div>
