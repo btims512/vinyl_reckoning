@@ -5,10 +5,8 @@ import {} from "@fortawesome/free-solid-svg-icons";
 import {
   faYoutube,
   faFacebook,
-  faLinkedin,
   faInstagram,
   faApple,
-  faSpotify,
 } from "@fortawesome/free-brands-svg-icons";
 
 function Footer() {
@@ -37,10 +35,6 @@ function Footer() {
             <i className="fab fa-apple" />
             <FontAwesomeIcon icon={faApple} />
           </a>
-          {/* <a href="https://podcasts.apple.com/us/podcast/the-vinyl-reckoning-podcast/id1452882599">
-            <i className="fab fa-spotify" />
-            <FontAwesomeIcon icon={faSpotify} />
-          </a> */}
           <p className="company-name">
             VINYL RECKONING © 2022, ALL Rights Reserved
           </p>
