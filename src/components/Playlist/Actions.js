@@ -12,9 +12,9 @@ import playerContext from "../../context/PlayerContext";
   url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 </style>;
 
-const fav = () => {
-  console.log("I like this one");
-};
+// const fav = () => {
+//   console.log("I like this one");
+// };
 
 let Actions = () => (
   <div className="actions">

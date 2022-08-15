@@ -53,6 +53,7 @@ export const NavbarStyles = styled.div`
   .navbar .nav-container a {
     text-decoration: none;
     color: rgb(234, 51, 161);
+    font-family: monospace;
     font-weight: 500;
     font-size: 2rem;
     padding: 0.7rem;
@@ -65,8 +66,9 @@ export const NavbarStyles = styled.div`
   .nav-container {
     display: block;
     /* position: relative; */
+    z-index: 2;
     height: 60px;
-    margin-left: 1.3rem;
+    margin-left: -11vw;
   }
 
   .nav-container .checkbox {
@@ -149,6 +151,7 @@ export const NavbarStyles = styled.div`
     margin-bottom: 1.2rem;
     font-size: 2.5rem;
     font-weight: 500;
+    padding-left: 45px;
   }
 
   .logo {
@@ -156,6 +159,7 @@ export const NavbarStyles = styled.div`
     top: 5px;
     display: flex;
     right: 15px;
+    font-family: monospace;
     font-size: 1.2rem;
     color: #fafafa;
     flex-direction: row-reverse;
@@ -229,6 +233,7 @@ export const NavbarStyles = styled.div`
     .navbar-desk .nav-container a {
       text-decoration: none;
       color: rgb(234, 51, 161);
+      font-family: monospace;
       font-weight: 500;
       font-size: 2rem;
       padding: 0.7rem;

@@ -1,5 +1,5 @@
 import React from "react";
-import { HomeBodyStyles } from "./HomeBodyStyles";
+// import { HomeBodyStyles } from "./HomeBodyStyles";
 import AudioPlayer from "../AudioPlayer/AudioPlayer";
 
 function HomeBody() {

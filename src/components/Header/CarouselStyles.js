@@ -55,6 +55,11 @@ export const CarouselStyles = styled.div`
     bottom: 8px;
     width: 100%;
     text-align: center;
+
+    @media (max-width: 800px) {
+      width: 100px;
+      left: 50px;
+    }
   }
 
   /* Number text (1/3 etc) */
@@ -107,5 +112,8 @@ export const CarouselStyles = styled.div`
     to {
       opacity: 1;
     }
+  }
+
+  @@media screen {
   }
 `;

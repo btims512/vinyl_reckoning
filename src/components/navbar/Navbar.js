@@ -20,7 +20,9 @@ function Navbar() {
               <a href="/">home</a>
             </li>
             <li>
-              <a href="https://vinylreckoning.podbean.com">episodes</a>
+              <a href="https://podbay.fm/p/the-vinyl-reckoning-podcast">
+                episodes
+              </a>
             </li>
             <li>
               <a href="https://vinyl-reckoning.creator-spring.com/?">merch</a>
@@ -49,7 +51,9 @@ function Navbar() {
                     <a href="/">home</a>
                   </li>
                   <li>
-                    <a href="https://vinylreckoning.podbean.com">episodes</a>
+                    <a href="https://podbay.fm/p/the-vinyl-reckoning-podcast">
+                      episodes
+                    </a>
                   </li>
                   <li>
                     <a href="https://vinyl-reckoning.creator-spring.com/?">
@@ -57,7 +61,9 @@ function Navbar() {
                     </a>
                   </li>
                   <li>
-                    <a href="#">contact</a>
+                    <a href="https://us2.list-manage.com/contact-form?u=c898e433485bbd95d0c0e78e3&form_id=a7ff6e901d347fcb18affda0683ef542">
+                      contact
+                    </a>
                   </li>
                 </div>
               </div>
